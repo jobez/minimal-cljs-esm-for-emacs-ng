@@ -1,7 +1,7 @@
 {:source-paths ["src"]
  :builds {:app {:target :esm
                 :output-dir "target/"
-                :modules {:z {:exports {foo app.main/main!}}}
+                :modules {:baz {:exports {foo app.main/bar}}}
                 :runtime :custom
                 }
           }}

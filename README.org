@@ -1,0 +1,33 @@
+* the gist
+
+  emacs-ng has denojs. you have cljs. denojs wants ecmascript modules. shadow-cljs allows you to emit cljs as ecmascript modules: here is an incredibly boring example how!
+* steps
+  (implicit step of being a self conscious sentient being with agency and capacity to communicate)
+** 1. get clojure
+
+   I defer to: [https://clojure.org/guides/getting_started]
+** 2. yoink this repo
+** 3. cd into the directory you pulled this repo and run
+
+   #+begin_src shell
+   clojure -M:cljs watch app
+   #+end_src
+
+   This will start a file watcher that will re-emit your cljs upon each save.
+** open boring.js
+
+   i.e.
+
+   #+begin_src elisp
+(find-file "./boring.js")
+   #+end_src
+** figure out the directory of where you put the folder containing this very file
+
+   i.e.
+
+   #+begin_src elisp
+(pwd)
+   #+end_src
+** set that directory to the path variable in boring.js
+** then run `eval-js-buffer`
+** run through the streets chanting 'I did it'
