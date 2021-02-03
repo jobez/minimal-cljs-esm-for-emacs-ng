@@ -1,6 +1,7 @@
-
 {:source-paths ["src"]
- :dependencies []
- :builds {:app {:target :node-script
-                :output-to "target/main.js"
-                :main server.main/main!}}}
+ :builds {:app {:target :esm
+                :output-dir "target/"
+                :modules {:z {:exports {foo app.main/main!}}}
+                :runtime :custom
+                }
+          }}
