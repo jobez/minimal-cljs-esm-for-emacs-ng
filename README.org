@@ -21,13 +21,5 @@
    #+begin_src elisp
 (find-file "./boring.js")
    #+end_src
-** figure out the directory of where you put the folder containing this very file
-
-   i.e.
-
-   #+begin_src elisp
-(pwd)
-   #+end_src
-** set that directory to the path variable in boring.js
-** then run `eval-js-buffer`
+** run `eval-js-buffer`
 ** run through the streets chanting 'I did it'
